@@ -2,6 +2,7 @@
 using AGL.ServiceAgent;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Ploeh.AutoFixture;
+using System.Linq;
 
 namespace AGL.Tests
 {
@@ -23,7 +24,9 @@ namespace AGL.Tests
             var serviceAgent = fixture.Create<PetServiceAgent>();
             var petInformation = serviceAgent.GetPetInformation();
             Assert.IsNotNull(petInformation);
-            //Assert.IsTrue(petInformation);
+            Assert.IsTrue(petInformation.Count() > 0);
+            Assert.IsNotNull(petInformation.First().Name);
+            Assert.IsNotNull(petInformation.First().Gender);
         }
     } 
 }

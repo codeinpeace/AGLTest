@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AGL.UI.Console", "AGL.UI.Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AGL.Model", "AGL.Model\AGL.Model.csproj", "{7C3B2122-F1EE-4B75-8236-95A7D1B8EC95}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{7CE6011F-05EA-43EF-8C5D-968CD75A01F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{E61747DF-4E93-43C6-A57B-8EE084A42C93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +46,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F12B1595-69FD-4A62-BFD3-1AF9E98EB213} = {E61747DF-4E93-43C6-A57B-8EE084A42C93}
+		{6331D8F2-74F4-4824-B6AC-3B0E89268D45} = {7CE6011F-05EA-43EF-8C5D-968CD75A01F5}
+		{43CE9FB9-C327-43EA-9C26-E436D150C07C} = {E61747DF-4E93-43C6-A57B-8EE084A42C93}
+		{7C3B2122-F1EE-4B75-8236-95A7D1B8EC95} = {7CE6011F-05EA-43EF-8C5D-968CD75A01F5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F906ED83-7B31-4985-BC3E-E2AFD6E68540}
