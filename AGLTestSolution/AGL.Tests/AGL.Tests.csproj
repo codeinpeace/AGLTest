@@ -74,13 +74,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AGL.Model\AGL.Model.csproj">
+    <ProjectReference Include="..\AGL.Model\AGL.Pet.Model.csproj">
       <Project>{7c3b2122-f1ee-4b75-8236-95a7d1b8ec95}</Project>
-      <Name>AGL.Model</Name>
+      <Name>AGL.Pet.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\AGL.ServiceAgent\AGL.ServiceAgent.csproj">
+    <ProjectReference Include="..\AGL.PetServiceManager\AGL.Pet.Manager.csproj">
+      <Project>{22db20b8-1767-4c87-8011-400cb00bdae5}</Project>
+      <Name>AGL.Pet.Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AGL.ServiceAgent\AGL.Pet.ServiceAgent.csproj">
       <Project>{6331d8f2-74f4-4824-b6ac-3b0e89268d45}</Project>
-      <Name>AGL.ServiceAgent</Name>
+      <Name>AGL.Pet.ServiceAgent</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

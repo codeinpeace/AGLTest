@@ -3,6 +3,7 @@ using AGL.ServiceAgent;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Ploeh.AutoFixture;
 using System.Linq;
+using AGL.Pet.Manager;
 
 namespace AGL.Tests
 {
@@ -28,6 +29,20 @@ namespace AGL.Tests
             Assert.IsNotNull(petInformation.First().Name);
             Assert.IsNotNull(petInformation.First().Gender);
         }
+
+
+        [TestMethod]
+        public void Can_get_cat_ownership_by_gender()
+        {
+            var fixture = new Fixture();
+
+            var serviceAgent = fixture.Create<PetServiceAgent>();
+            var petByGender = new PetManager(serviceAgent).GetCatOwnershipByGender();
+
+            Assert.IsNotNull(petByGender);
+            Assert.IsTrue(petByGender.CatsOwnedByFemales.Count() > 0);
+            Assert.IsTrue(petByGender.CatsOwnedByMales.Count() > 0);
+        }
     } 
 }
- 
+  

@@ -7,8 +7,8 @@
     <ProjectGuid>{6331D8F2-74F4-4824-B6AC-3B0E89268D45}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AGL.ServiceAgent</RootNamespace>
-    <AssemblyName>AGL.ServiceAgent</AssemblyName>
+    <RootNamespace>AGL.Pet.ServiceAgent</RootNamespace>
+    <AssemblyName>AGL.Pet.ServiceAgent</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -59,9 +59,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AGL.Model\AGL.Model.csproj">
+    <ProjectReference Include="..\AGL.Model\AGL.Pet.Model.csproj">
       <Project>{7c3b2122-f1ee-4b75-8236-95a7d1b8ec95}</Project>
-      <Name>AGL.Model</Name>
+      <Name>AGL.Pet.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

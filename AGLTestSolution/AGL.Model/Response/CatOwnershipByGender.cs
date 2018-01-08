@@ -4,17 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+ 
 
 namespace AGL.Model
 {
-    public class Pet
+    public class CatOwnershipByGender
     {
-        [JsonProperty("name")]
-        public string Name { get; set; }
-
-        [JsonProperty("type")]
-        public string Type { get; set; }
-
+        public List<Pet> CatsOwnedByMales { get; set; }
+        public List<Pet> CatsOwnedByFemales { get; set; } 
     }
 }
-  
+ 
