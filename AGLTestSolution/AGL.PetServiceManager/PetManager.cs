@@ -36,11 +36,11 @@ namespace AGL.Pet.Manager
             {
                 CatsOwnedByFemales = petsOwnedByFemales.Where(z => z.Pets != null)
                                         .SelectMany(x => x?.Pets
-                                        .Where(y => y?.Type?.Trim()?.ToLower() == "cat"))?.ToList(),
+                                        .Where(y => y?.Type?.Trim()?.ToLower() == "cat"))?.OrderBy( o => o.Name).ToList(),
                 
                 CatsOwnedByMales = petsOwnedByMales.Where(y => y.Pets != null)
                                         .SelectMany(x => x?.Pets).ToList()
-                                        .Where(x => x.Type.ToLower() == "cat")?.ToList()
+                                        .Where(x => x.Type.ToLower() == "cat")?.OrderBy(o => o.Name).ToList()
             };
         }
        

@@ -43,6 +43,7 @@ namespace AGL.Tests
             Assert.IsTrue(petByGender.CatsOwnedByFemales.Count() > 0);
             Assert.IsTrue(petByGender.CatsOwnedByMales.Count() > 0);
         }
+
     } 
 }
   
